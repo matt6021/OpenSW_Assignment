@@ -1,0 +1,24 @@
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 17:16 ?        00:00:00 /sbin/init
+root           2       1  0 17:16 ?        00:00:00 /init
+root           6       2  0 17:16 ?        00:00:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          42       1  0 17:16 ?        00:00:00 /usr/lib/systemd/systemd-journald
+root          89       1  0 17:16 ?        00:00:00 /usr/lib/systemd/systemd-udevd
+systemd+     104       1  0 17:16 ?        00:00:00 /usr/lib/systemd/systemd-resolved
+systemd+     105       1  0 17:16 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+root         177       1  0 17:16 ?        00:00:00 /usr/sbin/cron -f -P
+message+     178       1  0 17:16 ?        00:00:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         197       1  0 17:16 ?        00:00:00 /usr/lib/systemd/systemd-logind
+root         203       1  0 17:16 ?        00:00:00 /usr/libexec/wsl-pro-service -vv
+root         226       1  0 17:16 hvc0     00:00:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 vt220
+syslog       234       1  0 17:16 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root         238       1  0 17:16 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         250       1  0 17:16 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         365       2  0 17:16 ?        00:00:00 /init
+root         366     365  0 17:16 ?        00:00:00 /init
+dpfla602     367     366  0 17:16 pts/0    00:00:00 -bash
+root         368       2  0 17:16 pts/1    00:00:00 /bin/login -f
+dpfla602     459       1  0 17:16 ?        00:00:00 /usr/lib/systemd/systemd --user
+dpfla602     460     459  0 17:16 ?        00:00:00 (sd-pam)
+dpfla602     469     368  0 17:16 pts/1    00:00:00 -bash
+dpfla602     643     367 50 17:40 pts/0    00:00:00 ps -ef
